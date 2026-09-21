@@ -18,7 +18,7 @@ def leer_csv(ruta_archivo):
                     codigo = int(fila[0].strip())
                     tipo_cobro = int(fila[1].strip())
                     importe = float(fila[2].strip())
-                    cupon = float(fila[3].strip)
+                    cupon = float(fila[3].strip())
 
                     f = Farmacia(codigo, tipo_cobro, importe, cupon)
                     lista_farmacia.append(f)

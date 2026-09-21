@@ -8,7 +8,7 @@ class Hospital:
 
     def addAtencion(self, atencion):
         self.atenciones.append(atencion)
-        return print(f"La atencion {atencion} se agrego con exito en la coleccion")
+        return print(f"La atencion {atencion} - se agrego con exito en la coleccion")
 
     def impTotalAtCons(self):
         importe_total = 0
@@ -30,7 +30,7 @@ class Hospital:
         if contador == 0:
             return 0
         else:
-            return sumador/contador
+            return round(sumador/contador, 2)
 
     def codPrimAtHabt(self):
         for atencion in self.atenciones:
