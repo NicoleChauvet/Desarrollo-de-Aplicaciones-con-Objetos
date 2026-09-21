@@ -1,3 +1,4 @@
+from abc import ABC, abstractmethod
 
 class Atencion:
 
@@ -5,6 +6,7 @@ class Atencion:
         self.codigo = codigo
         self.tipo_cobro = tipo_cobro
 
+    @abstractmethod
     def imptACobrar(self):
         pass
 

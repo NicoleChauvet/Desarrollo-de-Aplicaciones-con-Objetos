@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 class Mantenimiento:
     def __init__(self, fecha, nombre, importe):
         self.fecha = fecha
@@ -7,6 +9,7 @@ class Mantenimiento:
     def __str__(self):
         return f"Fecha: {self.fecha} \n Nombre operario: {self.nombre} \n Importe gastado: {self.importe}"
 
+    @abstractmethod
     def obtener_gasto(self):
         return self.importe
 
