@@ -8,7 +8,7 @@ class Nacional(PaqueteViaje):
 
     def precio_total(self):
         if self.incluye_traslados:
-            return self.precio_total + (self.cantidad_personas*5000)
+            return super().precio_total() + (self.cantidad_personas*5000)
         return super().precio_total()
 
     def tipo(self):

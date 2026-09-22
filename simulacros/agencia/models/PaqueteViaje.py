@@ -18,4 +18,7 @@ class PaqueteViaje(ABC):
 
     def es_paquete_grupal(self):
         return (self.cantidad_personas > 4 and self.precio_total() > 100000)
+
+    def getCliente(self):
+        return self.cliente
     

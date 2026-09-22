@@ -1,8 +1,8 @@
 import pytest
 
-from entities.Nacional import Nacional
-from entities.Internacional import Internacional
-from entities.AgenciaViajes import AgenciaViajes
+from models.Nacional import Nacional
+from models.Internacional import Internacional
+from models.AgenciaViajes import AgenciaViajes
 
 
 @pytest.fixture()
